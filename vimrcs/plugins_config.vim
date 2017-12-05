@@ -32,13 +32,6 @@ map <leader>f :MRU<CR>
 
 
 """"""""""""""""""""""""""""""
-" => YankStack
-""""""""""""""""""""""""""""""
-nmap <c-p> <Plug>yankstack_substitute_older_paste
-nmap <c-n> <Plug>yankstack_substitute_newer_paste
-
-
-""""""""""""""""""""""""""""""
 " => CTRL-P
 """"""""""""""""""""""""""""""
 let g:ctrlp_working_path_mode = 0
@@ -92,7 +85,7 @@ let g:multi_cursor_next_key="\<C-s>"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => surround.vim config
-" Annotate strings with gettext http://amix.dk/blog/post/19678
+" Annotate strings with gettext 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 vmap Si S(i_<esc>f)
 au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>

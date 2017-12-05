@@ -21,7 +21,7 @@ endfunction
 "prints out the quick help
 function! s:UI._dumpHelp()
     if self.getShowHelp()
-        let help  = "\" NERD tree (" . nerdtree#version() . ") quickhelp~\n"
+        let help  = "\" NERDTree (" . nerdtree#version() . ") quickhelp~\n"
         let help .= "\" ============================\n"
         let help .= "\" File node mappings~\n"
         let help .= "\" ". (g:NERDTreeMouseMode ==# 3 ? "single" : "double") ."-click,\n"
@@ -47,6 +47,8 @@ function! s:UI._dumpHelp()
         let help .= "\" ". (g:NERDTreeMouseMode ==# 1 ? "double" : "single") ."-click,\n"
         let help .= "\" ". g:NERDTreeMapActivateNode .": open & close node\n"
         let help .= "\" ". g:NERDTreeMapOpenRecursively .": recursively open node\n"
+        let help .= "\" ". g:NERDTreeMapOpenInTab.": open in new tab\n"
+        let help .= "\" ". g:NERDTreeMapOpenInTabSilent .": open in new tab silently\n"
         let help .= "\" ". g:NERDTreeMapCloseDir .": close parent of node\n"
         let help .= "\" ". g:NERDTreeMapCloseChildren .": close all child nodes of\n"
         let help .= "\"    current node recursively\n"
