@@ -1,5 +1,5 @@
 set number
 set relativenumber
 
-set gfn=Source\ Code\ Pro:h10
+set gfn=Source\ Code\ Pro\ Semibold:h9
 
